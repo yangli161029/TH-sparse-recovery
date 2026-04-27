@@ -1,0 +1,15 @@
+# MATLAB
+*.asv
+*.m~
+*.mex*
+slprj/
+
+# generated outputs
+outputs/
+
+# macOS
+.DS_Store
+
+# editor / IDE
+.vscode/
+.idea/
