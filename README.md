@@ -1,10 +1,10 @@
-# TH-sparse-recovery
+# Truncated Huber Penalty for Sparse Signal Recovery with Convergence Analysis
 
 Official MATLAB implementation of the paper:
 
-> **L. Yang, S. Morigi, M. K. Ng, Y.-W. Wen.**  
-> *Truncated Huber Penalty for Sparse Signal Recovery with Convergence Analysis.*  
-> SIAM J. Sci. Comput., **48** (2026), pp. A929–A957.  
+> L. Yang, S. Morigi, M. K. Ng, Y.-W. Wen,
+> "Truncated Huber Penalty for Sparse Signal Recovery with Convergence Analysis,"
+> SIAM Journal on Scientific Computing (SISC), 2026.  
 > DOI: [10.1137/25M1748184](https://doi.org/10.1137/25M1748184)
 
 **Abstract.** Sparse signal recovery from underdetermined systems presents significant challenges when using conventional L0 and L1 penalties, primarily due to computational complexity and estimation bias. This paper introduces a truncated Huber penalty, a nonconvex metric that effectively bridges the gap between unbiased sparse recovery and differentiable optimization. The proposed penalty applies quadratic regularization to small entries while truncating large magnitudes, avoiding nondifferentiable points at optimal solutions. Theoretical analysis demonstrates that, for an appropriately chosen threshold, any (s,μ)-sparse solution recoverable via conventional penalties remains a local optimum under the truncated Huber function. To solve the optimization problem, we develop a block coordinate descent (BCD) algorithm with finite-step convergence guarantees under spark conditions. Numerical experiments validate the effectiveness and robustness of the proposed method in both synthetic and real scenarios.
